@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "emerald-vent-429019-f7",
+  "private_key_id": "f29fc4176ae05305eb34d81963ee58774bc167a2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCmzgauGNkIMTUc\nGDYwGo/PcU4QU7Ll91VGxFbYFnt1M6Nk36xN+bUlpyCbyh/joPuoZTfHv0/GQbI1\nXbQtbEs4Qi3dF9rUZg7ofJQipzIg6PRs0uloGtRrpQdj2SfLVhnqPBfxHn0/FE7l\nSroDexdU51qfI3/chV62XiKl8QXC+NAmyfcJLOTVycvOJbkLa1r9D135A8Tb/AR3\n08Fbpla8nM+ih6YOo+JSzBQX0BpSjYXKQWHNHEsmbfxr2KPDmmWv+RLmDr9RpUfe\ndDCyf4zrfr6drOzg/PpxZr9JrnS/H1opM3iHRCS9fPK57s+kdCMLhXmvFLUdS0Bx\n/90IysqDAgMBAAECggEAC3j1HalI2BbmU7nYlENna7mbyGSxU77Ipzbe0Drvn9Z+\n4PO/WpeXnXDavcxPmCzc0i6wAPWIC5c+Jgx9VXhyzfpDREcdPmmMkfHrkFyWhovv\nL8Lr2cSqooK1uOjZI1OXMbSTYvqZW6rOaFfU5mNjbewBoBtlcmnb40gjMu2aW1f8\nAwVAMRaTasGGH+PGMYQ8+pulA2AJOZ49f4eIWgOxOiWqi+W54pjIC4jwlQUZfeLa\nEdACF0VTwQpLZMUIiJ70T7FN+RQzdp+q4zH6g9tswoo53dw1/h9ZPfhB+jdm0+x1\nax8w0AvwQOV6vj7uPsgHBvp2c6dzf+8HYL9I4Zb0YQKBgQDm880JANG/V55P/XRc\nPIKeFQExNXKoNyKKdZYH6fx2MeB1hjfd58LCNBPneTJzaO+W0mH4MgocPb870k5k\nGTtA9IDpeaYHVGIl1HHw2BzB5uyHrDolVX5vo3OH3viLpxu8dmjBcE14DHnih8GT\nwQmW/kH2dFx5x0EPLFktuA6soQKBgQC45TjHZLAyDc5KhdC8k0AsQqKZhhWUKJ02\nGI87GkE4U5g4SThsYehUjS9g9TA1d4a1B1+EdB1mEEs5Zb9ymebp+GcrwjcbRow5\n/FQ4Twtv1jMPqkCcMSTJX6fagMDtFE5lA2BtsrUd8tLAePX5QbUg90jwwBs+aNZL\nEcKmEKbgowKBgGFy+8/Rta8cBGPSGTgWHDMhv8gIumF6KivsI6shMvKYZxKP2KDc\netRA7ykbfYsu+vFTwhzc2GFEOJ3ARm18LAFjacWaG9E57NPziURLnA7BJoq0xDAe\nm+P1PvlUvuEGWPCzsc31WerOsNtB1w9GQ4qfrCuWu7JyvePuHY7p+98hAoGAJPpa\n/63Ie0o9jrPyijRc6j0tbczeNfJldrM0uhpHHu/BCsjCCxMNtxNBfX+r85WDEGN4\nG/JpCseJc+JAhrf28aYnZB4EjWTvmI05fsV4QRaywZhIMbS2abvCwzVq4D9maldh\niq7qACJXOf03HHGiuwQZx2R0TmgDK6JSrom4BkcCgYEAgTSUGJjhkNBpfiLnWKOT\nN8+zGahRTNCb+Bx/o6pqH8aldo4/GPySQ8pnmhIvPgtDTB4+NAoPQc8pLVCwKy6H\nSbB9wvKt28pj3alm17P4bUMcDCS5ePbw/PuzALsuSxZrbYyIc9t7MsOu/H1zjzcC\nG9RSxdzhH3FMM+3UoaCEayc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "barbershop@emerald-vent-429019-f7.iam.gserviceaccount.com",
+  "client_id": "101557188871714508833",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/barbershop%40emerald-vent-429019-f7.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
