@@ -1,7 +1,22 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=u138558728_barbershop';
-	$user = 'u138558728_root';
-	$pass = 'alfaA1Bgamma@';
+	$db = array(
+		'host' => getenv('DB_HOST') ?: 'localhost',
+		'name' => getenv('DB_NAME') ?: 'barbershop',
+		'user' => getenv('DB_USER') ?: 'root',
+		'pass' => getenv('DB_PASS') ?: '',
+	);
+
+	$configPath = dirname(__DIR__) . '/config.local.php';
+	if (is_file($configPath)) {
+		$localDb = require $configPath;
+		if (is_array($localDb)) {
+			$db = array_merge($db, $localDb);
+		}
+	}
+
+    $dsn = 'mysql:host=' . $db['host'] . ';dbname=' . $db['name'];
+	$user = $db['user'];
+	$pass = $db['pass'];
 	$option = array(
 		PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
 	);

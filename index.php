@@ -68,12 +68,12 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="about_content" style="text-align: center;">
-                        <h3 style="color: #00cc66;"></h3>
-                        <h2 style="color: #00cc66;">[Zcutz] <br>Barber</h2>
+                        
+                    <img src="Design/images/Logo.jpg" alt="[Z cutz] Barber" style="max-width: 60%; height: auto;">
 
                         
-                        <p style="color: #00cc66;">
-                        Üdvözlünk a [Zcutz] Barbernél, ahol a hagyományos borbélymesterség találkozik a modern stílussal! Nálunk minden vendég különleges figyelmet kap – lépj be, és hagyd, hogy egyedi frizurával és megújult önbizalommal távozz!
+                        <p style="color: #ffffff;">
+                        Üdvözlünk a [Z CUTZ] Barbernél, ahol a hagyományos borbélymesterség találkozik a modern stílussal! Nálunk minden vendég különleges figyelmet kap – lépj be, és hagyd, hogy egyedi frizurával és megújult önbizalommal távozz!
                         </p>
                         
                     </div>
@@ -94,7 +94,7 @@
     <section class="services_section" id="services">
         <div class="container">
             <div class="section_heading">
-                <h3>Zcutz Barber Shop</h3>
+                <h3>Z CUTZ Barber</h3>
                 <h2>Szolgáltatásaink</h2>
                 <div class="heading-line"></div>
             </div>
@@ -102,7 +102,7 @@
                 <div class="col-lg-3 col-md-6 padd_col_res">
                     <div class="service_box">
                         <i class="bs bs-scissors-1"></i>
-                        <h3>Hajvágáss</h3>
+                        <h3>Hajvágás</h3>
                         <p></p>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
                         <div class="book_content">
                             <h2 style="color: white;">Foglalj Időpontot</h2>
                             <p style="color: #999;">
-                                Foglalj idpontot <br>ONLINE
+                                Foglalj időpontot <br>ONLINE
                             </p>
                         </div>
                         <div class="form-group row">
@@ -165,7 +165,7 @@
 
     <section class="gallery-section" id="gallery">
         <div class="section_heading">
-            <h3>[Zcutz]</h3>
+            <h3>[Z CUTZ]</h3>
             <h2>Munkáink</h2>
             <div class="heading-line"></div>
         </div>
@@ -220,8 +220,8 @@
     <section id="team" class="team_section">
         <div class="container">
             <div class="section_heading ">
-                <h3 style="color: #FFD700;" >Barbereink</h3>
-                <h2 style="color: #FFD700;">A csapat</h2>
+                <h3 style="color: #ffffff;" >Barbereink</h3>
+                <h2 style="color: #ffffff;">A csapat</h2>
                 <div class="heading-line"></div>
             </div>
             <ul class="team_members row"> 
@@ -324,21 +324,21 @@
         <div class="row">
             <div class="col-lg-6 sm-padding">
                 <div class="contact-info">
-                    <h2 style="color: #00cc66;">
+                    <h2 style="color: #ffffff;">
                         Vedd fel a kapcsolatot velünk:
                         <br>
                     </h2>
-                    <p style="color: #00cc66;"> 
+                    <p style="color: #ffffff;"> 
                     Legyünk része a stílusodnak – foglalj időpontot, és frissítsd megjelenésed!
                     </p>
-                    <h3 style="color: #00cc66;">
+                    <h3 style="color: #ffffff;">
                         Nyíregyháza Univerzum Üzletház
                         <br>
                         Vay Ádám körút 4-6
                     </h3>
-                    <h4 style="color: #00cc66;">
+                    <h4 style="color: #ffffff;">
                         <span style="font-weight: bold">Email:</span> 
-                        zoli@gmail.com
+                        odavidbarber@gmail.com
                         <br> 
                         <span style="font-weight: bold">Tel. Zoli:</span> 
                         +36 20 213 33 00
@@ -380,13 +380,12 @@
                             Nyitvatartás
                         </h3>
                         <ul class="opening_time">
-                            <li>Hétfő     08:00 - 15:00</li>
-                            <li>Kedd      08:00 - 15:00</li>
-                            <li>Szerda    08:00 - 15:00</li>
-                            <li>Csütörtök 08:00 - 15:00</li>
-                            <li>Péntek    08:00 - 15:00</li>
-                            <li>Szombat   08:00 - 15:00</li>
-                            <li>Vasárnap  08:00 - 15:00</li>
+                            <li>Hétfő     08:00 - 20:00</li>
+                            <li>Kedd      08:00 - 20:00</li>
+                            <li>Szerda    08:00 - 20:00</li>
+                            <li>Csütörtök 08:00 - 20:00</li>
+                            <li>Péntek    08:00 - 20:00</li>
+                            <li>Szombat   08:00 - 20:00</li>
                         </ul>
                     </div>
                 </div>

@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 		<meta name="description" content="Barbershop Booking Space">
 		<meta name="author" content="P.Z">
-		<title>[Zcutz] Barber Shop</title>
+		<title>[Z CUTZ] Barber </title>
 
 		<!-- EXTERNAL CSS LINKS -->
 

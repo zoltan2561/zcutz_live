@@ -1,0 +1,35 @@
+# Dependencies installed on the server.
+/vendor/
+
+# Local credentials and generated Google auth tokens.
+/config.local.php
+/credentials.json
+/calendar_api.json
+/tokens/
+
+# Server/default/test/backup files that should not be deployed from Git.
+/default.php
+/test_*.php
+*.LIVE
+!/appointment.php.LIVE
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+
+# Runtime files.
+*.log
+error_log
+
+# Database dumps.
+*.sql
+*.sql.gz
+*.dump
+
+# OS/editor noise.
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
