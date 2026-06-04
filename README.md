@@ -1,39 +1,52 @@
-<h1>Barbershop Website | Barbershop Management website using PHP & MYSQL</h1>
-<h2>Make online reservations and manage your barbershop</h2>
-<p>Barbershop website from scratch using PHP and MySql, Manage the barbershop appointmetns, employees, services, ...etc</p>
-<hr>
-<div>
-	<h3>Technologies</h3>
-  	<ul>
-		<li>HTML & CSS</li>
-		<li>Bootstrap</li>
-		<li>JavaScript & Jquery</li>
-		<li>Ajax</li>
-		<li>PHP & MYSQL</li>
-	</ul>
-</div>
-<hr>
-<div>
-	<h3>Website Demo</h3>
-  	<ul>
-		<li>https://www.youtube.com/watch?v=0_BIVwIHcZM&ab_channel=IdrissJairi </li>
-		<li>Admin Login Page: http://localhost/barbershop-website-php-mysql/barber-admin/</li>
-	</ul>
-	<p>
-		Username: admin
-		<br>
-		Password: 123456789
-	</p>
-</div>
-<hr>
-<div>
-	<h3>Installation</h3>
-  	<ol>
-		<li>Download the files + database file (.sql)</li>
-		<li>Create new database with the name "barbershop" and then Import the sql file downloaded </li>
-		<li>Check the files connect.php to make sure that everything is working</li>
-		<li>The website is ready to use</li>
-		<li>Feel free to edit the missig parts or the existing parts</li>
-	</ol>
-</div>
-<p>Questions and Clarifications: If you have any questions feel free to contact me: https://www.facebook.com/jairiidriss/</p>
+# Z Cutz Barber
+
+Z Cutz Barber időpontfoglalásra és alap adminisztrációra készült weboldala.
+
+## Technológiák
+
+- Frontend: HTML, CSS, JavaScript
+- Backend: PHP, MySQL
+- Integráció: Google Calendar API
+
+## Főbb funkciók
+
+- nyilvános bemutatkozó oldal
+- szolgáltatások és árlista megjelenítése
+- időpontfoglalási felület
+- admin felület foglalások és vendégek kezeléséhez
+- opcionális Google Naptár szinkron
+
+## Konfiguráció
+
+A Gitben nincs éles adatbázis jelszó vagy Google credential fájl.
+
+Az adatbázis kapcsolat helyi/éles beállításához a `config.example.php` alapján kell létrehozni egy `config.local.php` fájlt a szerveren. Ez a fájl `.gitignore` alatt van, ezért az autodeploy nem írja felül.
+
+Példa:
+
+```php
+<?php
+
+return array(
+    'host' => 'localhost',
+    'name' => 'database_name',
+    'user' => 'database_user',
+    'pass' => 'database_password',
+);
+```
+
+## Deploy
+
+A cél az, hogy a GitHubon lévő kód tükrözze az éles szerveren használt verziót, miközben a szerverhez kötött fájlok ne kerüljenek fel a repóba.
+
+Nem kerül Gitbe:
+
+- `vendor/`
+- adatbázis dumpok
+- Google credential és token fájlok
+- éles lokális konfiguráció
+- teszt és backup fájlok
+
+## Készítő
+
+By: P. Zoltán
