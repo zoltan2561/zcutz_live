@@ -2,6 +2,7 @@
 /vendor/
 
 # Local credentials and generated Google auth tokens.
+/connect.php
 /config.local.php
 /credentials.json
 /calendar_api.json

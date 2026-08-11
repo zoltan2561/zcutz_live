@@ -3,7 +3,6 @@
 
 <?php
 
-    include "connect.php";
     include "Includes/templates/header.php";
     include "Includes/templates/navbar.php";
 
@@ -225,14 +224,19 @@
                 <div class="heading-line"></div>
             </div>
             <ul class="team_members row"> 
-                <li class="col-lg-3 col-md-6 padd_col_res">
+                <li class="col-lg-4 col-md-6 padd_col_res">
                     <div class="team_member">
-                        <img src="Design/images/zoli.jpg" alt="Team Member">
+                        <img src="Design/images/zoli.jpg" alt="Zoli barber">
                     </div>
                 </li>
-                <li class="col-lg-3 col-md-6 padd_col_res">
+                <li class="col-lg-4 col-md-6 padd_col_res">
                     <div class="team_member">
-                        <img src="Design/images/david.jpg" alt="Team Member">
+                        <img src="Design/images/david.jpg" alt="Dávid barber">
+                    </div>
+                </li>
+                <li class="col-lg-4 col-md-6 padd_col_res">
+                    <div class="team_member">
+                        <img src="Design/images/kristof.jpg" alt="Kristóf barber">
                     </div>
                 </li>
               
@@ -250,13 +254,19 @@
 
     <section class="pricing_section" id="pricing">
 
-        <!-- START GET CATEGORIES  PRICES FROM DATABASE -->
+        <!-- START UPDATED PRICE LIST -->
 
             <?php
 
-                $stmt = $con->prepare("Select * from service_categories");
-                $stmt->execute();
-                $categories = $stmt->fetchAll();
+                $priceList = array(
+                    array('name' => 'Hajvágás', 'price' => 5600),
+                    array('name' => 'Haj - szakálligazítás', 'price' => 7600),
+                    array('name' => 'Szakálligazítás / borotválás', 'price' => 5000),
+                    array('name' => 'Ollós vágás', 'price' => 7600),
+                    array('name' => 'Szakállfestés', 'price' => 3800),
+                    array('name' => 'Gyerek haj (6 éves korig)', 'price' => 4800),
+                    array('name' => 'Mosás', 'price' => 800),
+                );
 
             ?>
 
@@ -268,51 +278,15 @@
                 <h2>Árlista</h2>
                 <div class="heading-line"></div>
             </div>
-            <div class="row">
-                <?php
-
-                    foreach($categories as $category)
-                    {
-                        $stmt = $con->prepare("Select * from services where category_id = ?");
-                        $stmt->execute(array($category['category_id']));
-                        $totalServices =  $stmt->rowCount();
-                        $services = $stmt->fetchAll();
-
-                        if($totalServices > 0)
-                        {
-                        ?>
-
-                            <div class="col-lg-4 col-md-6 sm-padding">
-                                <div class="price_wrap">
-                                    <h3><?php echo $category['category_name'] ?></h3>
-                                    <ul class="price_list">
-                                        <?php
-
-                                            foreach($services as $service)
-                                            {
-                                                ?>
-
-                                                    <li>
-                                                        <h4><?php echo $service['service_name'] ?></h4>
-                                                        <p><?php echo $service['service_description'] ?></p>
-                                                        <span class="price"><?php echo $service['service_price'] ?> HUF</span>
-                                                    </li>
-
-                                                <?php
-                                            }
-
-                                        ?>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-
-                        <?php
-                        }
-                    }
-
-                ?>
-                
+            <div class="price_wrap price_wrap--updated">
+                <ul class="price_list price_list--updated">
+                    <?php foreach($priceList as $service): ?>
+                        <li>
+                            <h4><?php echo htmlspecialchars($service['name'], ENT_QUOTES, 'UTF-8'); ?></h4>
+                            <span class="price"><?php echo number_format($service['price'], 0, ',', ' '); ?> Ft</span>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
         </div>
     </section>
@@ -346,6 +320,12 @@
                         <span style="font-weight: bold">Tel. Dávid:</span> 
                         +36 30 723 3611
                         <br> 
+                        <span style="font-weight: bold">Tel. Kristóf:</span>
+                        <a href="tel:+36205953394">+36 20 595 3394</a>
+                        <br>
+                        <span style="font-weight: bold">Instagram Kristóf:</span>
+                        <a href="https://www.instagram.com/kristof_thebarber" target="_blank" rel="noopener noreferrer">@kristof_thebarber</a>
+                        <br>
                     </h4>
                 </div>
             </div>
@@ -368,6 +348,7 @@
                             <li><a href="https://www.facebook.com/zoltancutz" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a></li>
                             
                             <li><a href="https://www.instagram.com/zoltan_cutzz" data-toggle="tooltip" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a></li>
+                            <li><a href="https://www.instagram.com/kristof_thebarber" data-toggle="tooltip" title="Kristóf Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a></li>
                             
                             
                         </ul>

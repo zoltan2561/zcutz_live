@@ -20,6 +20,11 @@
 
 @media (max-width: 767px)
 {
+	.pricing_section .price_list--updated
+	{
+		grid-template-columns: 1fr;
+	}
+
 	.book_bg, .about_img
 	{
     	display: none;
